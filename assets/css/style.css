@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+
+
+
+
+/* main css start */
+
+/*============== TopHeader CSS ============ */
+
+#topHeader{
+    padding: 20px 0;
+    background: #012D72;
+}
+.topHeader_item a i{
+ color: #fff;
+}
+
+.topHeader_item span{
+    color: #fff;
+}
+
+.icons_item{
+    padding-left: 10px;
+}
