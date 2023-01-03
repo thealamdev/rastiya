@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
-*{
-    margin:0;
+
+/* ========= common css ========= */
+* {
+    margin: 0;
     padding: 0;
     outline: 0;
 }
 
-a{
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+
+a {
     display: inline-block;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -19,91 +26,200 @@ ol {
     list-style-type: none;
 }
 
-a,p,h1,h2,h3,h4,h5,h6{
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     vertical-align: middle;
 }
 
-body{
-    overflow-x: hidden;
+body {
+    overflow-x: hidden !important;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #656565;
 }
 
-b,strong{
+b,
+strong {
     font-weight: 700;
 }
 
+:root {
+    --primary_font: 'Open Sans', Arial, sans-serif;
+    --primary_color: #fff;
+    --secondary_color: #f8f8f8;
+    --top_header:#012D72;
+    --nav_color: #222222;
+    --footer_color: #000;
+    
 
+}
 
+/* ============= common css end ============= */
 /* main css start */
 
 /*============== TopHeader CSS ============ */
 
-#topHeader{
-    padding: 20px 0;
-    background: #012D72;
-}
-.topHeader_item a i{
- color: #fff;
+#topHeader {
+    padding-bottom: 20px;
+    background: var(--top_header);
 }
 
-.topHeader_item span{
-    color: #fff;
+.topHeader_info {
+    padding-top: 10px;
 }
 
-.icons_item{
-    padding-left: 10px;
+.topHeader_item a i {
+    color: var(--primary_color);
+    width: 10px;
+    height: 10px;
+}
+
+.topHeader_info span:hover {
+    color: #1c1717;
+    cursor: pointer;
+}
+
+.topHeader_item span {
+    color: var(--primary_color);
+}
+
+.icons_item a {
+    padding: 10px 20px;
+}
+
+/* hover effect on topHeader icons */
+
+.topHeader_icons .icons_item a{
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+ 
+.topHeader_icons .facebook a:hover {
+    background: #507CBE;
+
+}
+
+.topHeader_icons .twitter a:hover {
+    background: #63CDF1;
+
+}
+
+.topHeader_icons .linkedin a:hover {
+    background: #90CADD;
+
+}
+
+
+.topHeader_icons .whatsapp a:hover {
+    background: #F16261;
+}
+
+/* hover effect end */
+
+
+/* ============== sidt logo css ============= */
+
+.site_logo_image{
+    width: 100%;
+
+}
+
+.site_logo_image img{
+    width: 100%;
+    overflow: hidden;
+}
+#site_logo {
+    position: relative;
+}
+
+
+#site_logo::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    box-shadow: 0px 0px 5px 20px 3px gray;
+    left: 0;
+    z-index: 10;
 }
 
 /* ============= Header css =============== */
-header{
+.navbar {
     background: #fff;
     padding: 20px 0;
-    box-shadow: -1px -2px -3px solid gray;
+    box-shadow: 10px 20px 30px 20px solid gray;
     margin-top: 0;
 }
 
 
 .navbar ul li a {
-    /* font-family: var(--abel_font_family); */
-    font-size: 16px;
-    color: #353535;
+    font-family: var(--primary_font);
+    font-size: 12px;
+    color: var(--nav_color);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
+    margin: 0 0 0 5px;
+    padding: 10px 15px !important;
+    background: var(--primary_color);
+    transition: 0.4s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
+
+.navbar ul li a:hover {
+    background: #002470;
+    border-radius: 30px;
+    color: var(--primary_color);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
 
 /* ========== banner css ========== */
 
-#banner{
-
-}
-
-.owl-carousel>.slider>img{
+.owl-carousel>.slider>img {
     position: absolute;
     display: block;
-    max-width:100%;
+    max-width: 100%;
     height: auto;
     line-height: 1;
 }
 
-#about{
+#about {
     padding: 50px 0;
 
 }
 
-.about_content{
 
-}
-
-.about_content h2{
+.about_content h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     line-height: 1.1em;
-    color:#313290;
-    margin-bottom:20px;
+    color: #313290;
+    margin-bottom: 20px;
 
 }
 
@@ -116,21 +232,104 @@ header{
 }
 
 /* =========== Footer css ========== */
-#footer{
-    padding: 15px 0;
 
+#footer {
+    padding: 20px 0;
+    background: var(--footer_color);
 }
 
-.widget{
-    color:#f8f8f8;
+ 
+
+.widget p{
+    color: var(--primary_color);
+    font-size: 13px;
+    font-weight: 400;
 }
 
-.footer_common_design{
+.widget h5 {
+    font-size: 17px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     line-height: 1.1em;
-    color:#f8f8f8;
-    margin-bottom:20px;
+    color: #f8f8f8;
+    margin-bottom: 20px;
+}
+
+.widget ul li a {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+ 
+input[type="text"i] {
+    padding: 5px 10px;
+    margin: 5px 0;
+    width: 100%;
+    width: 350px !important;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+#btn_submit {
+    background: #FB8000;
+}
+
+.under_line {
+    width: 100%;
+    height: 1px;
+    background: #dadada;
+    margin-top: 20px;
+}
+
+.down_footer {
+    padding: 20px 0;
+}
+
+.copyright p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: #f5f5f5;
 
 }
 
+.copyright a {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: #f5f5f5;
+
+}
+
+.social_links .icons_item a {
+    color: var(--primary_color);
+}
+
+/* back to top */
+#back {
+    position: relative
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    background: #363636;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 202002020;
+    text-align: center;
+}
+
+.back-to-top i {
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+
+}
+/* ==================== end =================== */
