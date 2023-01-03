@@ -311,7 +311,7 @@ textarea {
     color: var(--primary_color);
 }
 
-/* back to top */
+/* ========= back to top css =============*/
 #back {
     position: relative
 }
@@ -334,4 +334,4 @@ textarea {
     line-height: 50px;
 
 }
-/* ==================== end =================== */
+/* ==================== end of code =================== */
