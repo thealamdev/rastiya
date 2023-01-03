@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rastiya</title>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,600&family=Oswald:wght@400;500;600;700&family=Raleway:wght@300;500;600;700;800&family=Roboto+Slab:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <!-- bootstrap css link -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
@@ -140,14 +144,89 @@
         </section>
 
         <section id="about">
-            <div class="row">
-                <div class="col-lg-8">
-                    df
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="about_content">
+                            <h2>“RASTRIYA YOUTH COMPUTER CENTRE”</h2>
+                            <p><b>Rastriya Youth Computer Centre</b> A Step Towards I.T World is a leading Computer Education Network in all over India. The organization reach in village-to-village and all cities to provide lower, middle and higher class Gentry. The Organization Slogan is our “There are still million People, whose only dream of Computer Education” <b>“RASTRIYA YOUTH COMPUTER CENTRE”</b> an autonomous institution registered No 43110/2014-CO/L, BU0782 / 0637:0912 Government of India. RASTRIYA YOUTH COMPUTER CENTRE provides various training programs of Central and State Government to the people of different categories in the society. Information Technology for everyone, and to fulfill the need of 28 lakhs I.T professional till 2011 and other job related to this factor and given the employment directly or indirectly to one Crore people of India. <b>RASTRIYA YOUTH COMPUTER CENTRE</b> is the main motto behind running this program is to bring computer revolution in every village and city of India by delivering the high technical education at the nominal fee to the people of every category in India.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="about_image">
+                            <img src="assets/images/iso.jpg" alt="iso.jpg" class="w-100">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">df</div>
             </div>
+           
         </section>
     </main>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <b>Head office</b><br>28/2 Adwaita Sadak, Thana More, P.O- Santipur, Dist- Nadia, West Bengal - 741404, INDIA<br>Email Id&nbsp;&nbsp;: ryccdnksudip@gmail.com<br>Phone No.- +91 9163114684	
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Quick Links</h5>
+                        <ul class="link-list">
+                            <li><a href="#">ID Verification</a></li>
+                            <li><a href="#">Result Verification</a></li>
+                            <li><a href="#">Certification Verification</a></li>
+                            <li><a href="#">Centre Login</a></li>
+                            <li><a href="#">Online Test</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Links</h5>
+                        <ul class="link-list">
+                            <li><a href="#">Recognition</a></li>
+                            <li><a href="#">Our Project</a></li>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Franchise</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Enquiry Form</h5>
+                        <div class="flickr_badge row">
+                            <form id="contactform" action="#" method="post" class="validateform" name="send-contact">
+                                <input type="hidden" name="action" value="save">
+                                <div class="col-lg-12 field">
+                                  <input type="text" id="your_name" name="your_name" placeholder="full name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars">
+                                  <div class="validation"> </div>
+                                </div>
+                                <div class="col-lg-12 margintop10 field">
+                                  <input type="text" name="your_email" id="your_email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
+                                  <div class="validation"> </div>
+                                </div>
+                                <div class="col-lg-12 margintop10 field">
+                                  <input type="text" name="your_phone" id="your_phone" placeholder="Phone" data-rule="maxlen:4" data-msg="Please enter at least 4 chars">
+                                  <div class="validation"> </div>
+                                </div>
+                                <div class="col-lg-12 margintop10 field">
+                                  <textarea rows="2" name="your_message" id="your_message" class="input-block-level" placeholder="* Your message here..." data-rule="required" data-msg="Please write something"></textarea>
+                                  <div class="validation"> </div>
+                                  <p>
+                                    <button id="btn_submit" class="btn btn-theme margintop10 pull-left" type="submit">Submit message</button>
+                                  </p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- header section end -->
 
     <!-- all js links -->
@@ -163,8 +242,8 @@
           $(".owl-carousel").owlCarousel({
             items :1,
             loop :true,
-            nav:true,
-            dots:true,
+            nav:false,
+            dots:false,
             autoplay:true,
             autoplaySpeed:1000,
             smartSpeed:1500,

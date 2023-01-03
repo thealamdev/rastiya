@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -30,6 +31,11 @@ img{
 body{
     overflow-x: hidden;
 }
+
+b,strong{
+    font-weight: 700;
+}
+
 
 
 /* main css start */
@@ -85,6 +91,46 @@ header{
 
 #about{
     padding: 50px 0;
+
+}
+
+.about_content{
+
+}
+
+.about_content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+    color:#313290;
+    margin-bottom:20px;
+
+}
+
+.about_content p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #656565;
+}
+
+/* =========== Footer css ========== */
+#footer{
+    padding: 15px 0;
+
+}
+
+.widget{
+    color:#f8f8f8;
+}
+
+.footer_common_design{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.1em;
+    color:#f8f8f8;
+    margin-bottom:20px;
 
 }
 
