@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- slider css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!-- custom css link -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -62,9 +65,89 @@
 
     <!-- header section start -->
     <header>
-        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">ABOUT RYCC</a>
+                        </li>
+    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">OUR COURSES</a>
+                        </li>
+    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">OUR BRANCHES</a>
+                        </li>
+    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Registration </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">contact us</a>
+                        </li>
+    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">admin login </a>
+                        </li>
+                    </ul>
+                </div>
+    
+
+            </div>
+    
+        </nav>
     </header>
 
+
+    <main>
+        <section id="banner">
+            <div class="owl-carousel">
+                <div class="slider img1">
+                    <img src="assets/images/slider2.jpg" alt="banner">
+                    <div class="overlay">
+                    </div>
+                </div>
+
+                <div class="slider img1">
+                    <img src="assets/images/slider3.jpg" alt="banner">
+                    <div class="overlay">
+                    </div>
+                </div>
+
+                <div class="slider img1">
+                    <img src="assets/images/slider4.jpg" alt="banner">
+                    <div class="overlay">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="row">
+                <div class="col-lg-8">
+                    df
+                </div>
+                <div class="col-lg-4">df</div>
+            </div>
+        </section>
+    </main>
     <!-- header section end -->
 
     <!-- all js links -->
@@ -73,10 +156,20 @@
     <!-- bootstrap js links -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
     <script>
-        $('.btn').on('click',function(){
-            alert('hi');
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+            items :1,
+            loop :true,
+            nav:true,
+            dots:true,
+            autoplay:true,
+            autoplaySpeed:1000,
+            smartSpeed:1500,
+            autoHeight:true
+          });
         });
     </script>
 </body>

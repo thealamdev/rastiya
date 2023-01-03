@@ -27,8 +27,9 @@ img{
     vertical-align: middle;
 }
 
-
-
+body{
+    overflow-x: hidden;
+}
 
 
 /* main css start */
@@ -50,3 +51,40 @@ img{
 .icons_item{
     padding-left: 10px;
 }
+
+/* ============= Header css =============== */
+header{
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: -1px -2px -3px solid gray;
+    margin-top: 0;
+}
+
+
+.navbar ul li a {
+    /* font-family: var(--abel_font_family); */
+    font-size: 16px;
+    color: #353535;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ========== banner css ========== */
+
+#banner{
+
+}
+
+.owl-carousel>.slider>img{
+    position: absolute;
+    display: block;
+    max-width:100%;
+    height: auto;
+    line-height: 1;
+}
+
+#about{
+    padding: 50px 0;
+
+}
+
